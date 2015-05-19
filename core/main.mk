@@ -145,6 +145,10 @@ endif
 
 java_version_str := $(shell unset _JAVA_OPTIONS JAVA_TOOL_OPTIONS && java -version 2>&1)
 javac_version_str := $(shell unset _JAVA_OPTIONS JAVA_TOOL_OPTIONS && javac -version 2>&1)
+$(info ************************************************************)
+$(info version $(java_version_str))
+$(info version $(javac_version_str))
+
 
 # Check for the correct version of java, should be 1.7 by
 # default, and 1.6 if LEGACY_USE_JAVA6 is set.
@@ -181,7 +185,7 @@ endif
 requires_openjdk := false
 ifeq ($(LEGACY_USE_JAVA6),)
 ifeq ($(HOST_OS), linux)
-requires_openjdk := true
+requires_openjdk := false
 endif
 endif
 
