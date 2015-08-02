@@ -29,7 +29,7 @@ ifdef CXX_WRAPPER
   endif
 endif
 
-include $(BUILD_SYSTEM)/custom_flags.mk
+include $(BUILD_SYSTEM)/jgcaap.mk
 
 CLANG_CONFIG_EXTRA_CFLAGS += $(NEW_CLANG_CFLAGS)
 CLANG_CONFIG_EXTRA_CPPFLAGS += $(NEW_CLANG_CPPFLAGS)

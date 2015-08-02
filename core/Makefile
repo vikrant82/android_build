@@ -449,7 +449,7 @@ event-log-tags: $(event_log_tags_file)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(event_log_tags_file)
 
-include $(BUILD_SYSTEM)/custom_flags.mk
+include $(BUILD_SYSTEM)/jgcaap.mk
 
 
 # #################################################################
